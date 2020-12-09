@@ -32,6 +32,10 @@ h1, h2 {
     margin: 0;
 }
 
+h3 {
+    font-weight: 400;
+}
+
 p {
     margin: 0 10px;
 }
@@ -149,4 +153,17 @@ img {
 
 .stats .grid p {
     font-size: 25px;
+}
+
+
+/******Cli******/
+
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
 }
