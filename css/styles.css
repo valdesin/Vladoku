@@ -2,6 +2,9 @@
 
 :root {
     --primary-color: #049aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 
 /*******Basic CSS Config*******/
@@ -26,14 +29,10 @@ a {
     color: #333;
 }
 
-h1, h2 {
-    font-weight: 700;
+h1, h2, h3 {
+    font-weight: 400;
     line-height: 1.2;
     margin: 0;
-}
-
-h3 {
-    font-weight: 400;
 }
 
 p {
@@ -42,6 +41,10 @@ p {
 
 img {
     width: 100%;
+}
+
+.logo {
+    font-weight: 700;
 }
 
 
@@ -166,4 +169,34 @@ img {
 .cli .grid > *:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+}
+
+
+/****Cloud****/
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+
+/****Languages****/
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
 }
