@@ -33,6 +33,28 @@
     transform: scale(0.98);
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
 /***Background & colored buttons***/
 .bg-primary,
 .btn-primary {
@@ -92,25 +114,6 @@
     text-align: center;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
 
 /******Margin*******/
 .my-1 {
