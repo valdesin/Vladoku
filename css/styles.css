@@ -49,6 +49,11 @@ img {
     font-weight: 700;
 }
 
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
 
 /*******Navbar*******/
 
